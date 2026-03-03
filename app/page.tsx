@@ -1,3 +1,5 @@
+import WhatWeDo from "@/components/WhatWeDo";
+
 export default function HomePage() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -5,6 +7,7 @@ export default function HomePage() {
       <p className="mt-4 text-lg opacity-80">
         Homepage placeholder — design + CMS content coming soon.
       </p>
+      <WhatWeDo />
     </main>
   );
 }
