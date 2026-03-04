@@ -6,7 +6,9 @@ export default function WhatWeDo() {
         className="w-full object-cover h-135 opacity-70"
       ></img>
       <div className="absolute inset-0 flex flex-col items-center">
-        <h1 className="text-4xl font-bold pt-10 tracking-[3px]">What We Do</h1>
+        <h1 className="text-white text-4xl font-bold pt-10 tracking-[3px]">
+          What We Do
+        </h1>
         <div className="flex justify-center w-full">
           <div className="bg-white text-center w-1/4 h-90 m-5 mt-6 border-2 border-[#DEE2E6]">
             <h2 className="text-[#003366] m-5">Participation in Summits</h2>
