@@ -13,10 +13,11 @@ export default function Navbar() {
       <Image src="/logo.svg" width={100} height={100} alt="Youth Japan Logo" className="w-10 h-10" />
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
-      <Link href="/delegations">Delegations</Link>
+      <Link href="/members">Members</Link>
       <Link href="/apply">Apply</Link>
       <Link href="/events">Events</Link>
-      <Link href="/contact">Contact</Link>
+      <Link href="/library">Library</Link>
+      <Link href="/contact">Contact Us</Link>
       <Link className="bg-[#AA302C] text-white rounded-tr-lg rounded-md p-1 whitespace-nowrap" href="#">Donate Now</Link>
     </nav>
   );
