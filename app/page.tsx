@@ -1,3 +1,4 @@
+
 export default function HomePage() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -6,5 +7,6 @@ export default function HomePage() {
         Homepage placeholder — design + CMS content coming soon.
       </p>
     </main>
+    
   );
 }
