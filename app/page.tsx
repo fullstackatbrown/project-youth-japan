@@ -31,7 +31,7 @@ export default function HomePage() {
       </section>
 
       {/* About */}
-      <section className="bg-white py-16 md:py-20">
+      <section className="bg-[#FFF6F6] py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-3xl font-semibold text-[#183b5b] md:text-4xl lg:text-5xl">
             About Us
