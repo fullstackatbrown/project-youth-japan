@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { Instagram, Facebook, Twitter, Linkedin} from 'lucide-react';
 
-const linkStyle = "text-white hover:text-blue-400 font-medium transition-colors flex items-center justify-center w-12 h-12 rounded-full bg-[#b91f24]";
+const linkStyle = "text-white hover:text-blue-400 transition-colors flex items-center justify-center w-12 h-12 rounded-full bg-[#b91f24]";
 const iconStyle = "size={48}";
 
 export default function FollowOurJourney() {
   return (
     <div className="bg-[#0a1a3b] px-8 py-6 w-full">
-    <div className="mx-auto max-w-6xl flex flex-wrap items-center gap-4">
+    <div className="mx-auto max-w-6xl flex flex-wrap items-center gap-10">
         <h2 className="flex text-3xl font-semibold text-white ">Follow Our Journey</h2>
     <nav className="flex gap-8">
       <Link href="https://www.instagram.com/g7g20youthjapan/" 

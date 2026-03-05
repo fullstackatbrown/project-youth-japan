@@ -19,8 +19,8 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+         <FollowOurJourney />
         <Footer />
-        <FollowOurJourney />
       </body>
     </html>
   );
