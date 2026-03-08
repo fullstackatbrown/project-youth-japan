@@ -95,32 +95,6 @@ export default function AboutPage() {
         </Link>
       </div>
 
-      {/* Follow Our Journey — bg #003366, h-[179px] */}
-      <section className="bg-[#003366] h-[179px] px-6 flex items-center">
-        <div className="mx-auto max-w-6xl w-full flex items-center justify-between">
-          <h2 className="text-white font-bold text-[3.16rem] leading-[3.51rem] tracking-[0.03px] font-[family-name:var(--font-spartan)]">
-            Follow Our Journey
-          </h2>
-          <div className="flex gap-[74px]">
-            {/* Facebook */}
-            <a href="#" aria-label="Facebook" className="bg-[#b91f24] rounded-full w-[68px] h-[68px] flex items-center justify-center hover:bg-[#9e1a1f] transition-colors">
-              <svg className="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            {/* Instagram */}
-            <a href="#" aria-label="Instagram" className="bg-[#b91f24] rounded-full w-[68px] h-[68px] flex items-center justify-center hover:bg-[#9e1a1f] transition-colors">
-              <svg className="w-7 h-7 fill-white" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#003366" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#003366" strokeWidth="2"/></svg>
-            </a>
-            {/* LinkedIn */}
-            <a href="#" aria-label="LinkedIn" className="bg-[#b91f24] rounded-full w-[68px] h-[68px] flex items-center justify-center hover:bg-[#9e1a1f] transition-colors">
-              <svg className="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            {/* Twitter/X */}
-            <a href="#" aria-label="Twitter" className="bg-[#b91f24] rounded-full w-[68px] h-[68px] flex items-center justify-center hover:bg-[#9e1a1f] transition-colors">
-              <svg className="w-7 h-7 fill-none" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20" stroke="white" strokeWidth="2.5" strokeLinecap="round"/></svg>
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
