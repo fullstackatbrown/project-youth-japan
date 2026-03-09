@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import { League_Spartan, Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { League_Spartan, Plus_Jakarta_Sans } from "next/font/google";
 
 const headingFont = League_Spartan({
   subsets: ["latin"],
@@ -16,6 +16,8 @@ const bodyFont = Plus_Jakarta_Sans({
   variable: "--font-body",
 });
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export const metadata: Metadata = {
   title: "G7/G20 Youth Japan",
   description: "Official site for G7/G20 Youth Japan",
@@ -28,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${headingFont.variable} ${bodyFont.variable}`}>
+      <body className={`${headingFont.variable} ${bodyFont.variable} ${inter.variable}`}>
         <Navbar />
         {children}
         <Footer />
