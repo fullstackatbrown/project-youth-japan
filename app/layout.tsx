@@ -3,6 +3,7 @@ import { League_Spartan, Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import FollowOurJourney from "../components/FollowOurJourney";
 
 const headingFont = League_Spartan({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={`${headingFont.variable} ${bodyFont.variable} ${inter.variable}`}>
         <Navbar />
         {children}
+         <FollowOurJourney />
         <Footer />
       </body>
     </html>
