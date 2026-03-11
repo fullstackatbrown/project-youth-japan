@@ -6,10 +6,10 @@ const iconStyle = "size={48}";
 
 export default function FollowOurJourney() {
   return (
-    <div className="bg-[#0a1a3b] px-8 py-6 w-full">
-    <div className="mx-auto max-w-6xl flex flex-wrap items-center gap-10">
+    <div className="bg-[#003366] px-8 py-12 w-full">
+    <div className="mx-auto max-w-6xl flex flex-wrap items-center justify-center text-center gap-15">
         <h2 className="flex text-3xl font-semibold text-white ">Follow Our Journey</h2>
-    <nav className="flex gap-8">
+    <nav className="flex gap-12">
       <Link href="https://www.instagram.com/g7g20youthjapan/" 
         target="_blank"
         rel = "noopener noreferrer"
