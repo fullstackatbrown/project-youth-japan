@@ -58,5 +58,6 @@ export default function HomePage() {
           </section>
       <WhatWeDo />
     </main>
+    
   );
 }
