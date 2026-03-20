@@ -174,13 +174,13 @@ export default function AboutPage() {
         <h3 className="text-white font-bold text-[3.16rem] leading-[3.51rem] mb-4 font-[family-name:var(--font-heading)]">
           Partner with us
         </h3>
-        <p className="text-white text-[1.1rem] leading-[1.7rem] mb-4 font-[family-name:var(--font-body)]">
+        <p className="text-white text-[1.3rem] leading-[1.9rem] mb-4 font-[family-name:var(--font-body)]">
           Are you interested in partnering or collaborating with YDC? Send us an email to learn more
           about our partnerships.
         </p>
         
         <a href="mailto:partnerships.partenariats@youngdiplomats.ca"
-          className="text-white text-[1rem] underline font-[family-name:var(--font-body)]">
+          className="text-white text-[1.1rem] underline font-[family-name:var(--font-body)]">
           partnerships.partenariats@youngdiplomats.ca </a>
           </div>
       </div>
