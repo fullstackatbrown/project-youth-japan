@@ -36,7 +36,6 @@ export default function RootLayout({
         {children}
          <FollowOurJourney />
         <Footer />
-        <FollowOurJourney />
       </body>
     </html>
   );
