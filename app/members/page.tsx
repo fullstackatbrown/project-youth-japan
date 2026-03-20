@@ -7,28 +7,21 @@ type Member = {
   name: string;
   title: string;
   location: string;
-  category: "Leadership" | "Administration" | "Partners" | "Delegates";
   image?: string;
 };
 
 const MEMBERS: Member[] = [
-  { id: 1, name: "Emma Thompson", title: "Chief Operating Officer", location: "Montreal, QC", category: "Leadership" },
+  { id: 1, name: "Emma Thompson", title: "Chief Operating Officer", location: "Montreal, QC" },
 ];
-
-const CATEGORIES = ["All", "Leadership", "Administration", "Partners", "Delegates"] as const;
 
 export default function MembersPage() {
   const [search, setSearch] = useState("");
-  const [activeCategory, setActiveCategory] = useState<string>("All");
 
-  const filtered = MEMBERS.filter((m) => {
-    const matchesSearch =
-      m.name.toLowerCase().includes(search.toLowerCase()) ||
-      m.title.toLowerCase().includes(search.toLowerCase()) ||
-      m.location.toLowerCase().includes(search.toLowerCase());
-    const matchesCategory = activeCategory === "All" || m.category === activeCategory;
-    return matchesSearch && matchesCategory;
-  });
+  const filtered = MEMBERS.filter((m) =>
+    m.name.toLowerCase().includes(search.toLowerCase()) ||
+    m.title.toLowerCase().includes(search.toLowerCase()) ||
+    m.location.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <main className="bg-[#fff6f6]">
@@ -37,47 +30,9 @@ export default function MembersPage() {
           <h1 className="text-white font-bold text-[3.5rem] leading-[1.1] tracking-[0.09px] whitespace-nowrap font-[family-name:var(--font-heading)]">
             Our Members
           </h1>
-          <div className="flex flex-1 max-w-xl gap-2">
-            <div className="relative flex-1">
-              <svg
-                className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4"
-                fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <path d="m21 21-4.35-4.35" />
-              </svg>
-              <input
-                type="text"
-                placeholder="Search..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 rounded-md bg-white text-gray-800 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b91f24]"
-              />
-            </div>
-            <div className="relative">
-              <select
-                value={activeCategory}
-                onChange={(e) => setActiveCategory(e.target.value)}
-                className="appearance-none pl-3 pr-8 py-2.5 rounded-md bg-[#b91f24] text-white text-sm font-semibold focus:outline-none cursor-pointer"
-              >
-                {CATEGORIES.map((c) => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
-              <svg className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 text-white"
-                fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="w-full bg-[#b91f24] px-8 py-3">
-        <div className="flex w-full max-w-5xl mx-auto gap-2">
-          <div className="relative flex-1">
+          <div className="relative flex-1 max-w-xl">
             <svg
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-white w-4 h-4"
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4"
               fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"
             >
               <circle cx="11" cy="11" r="8" />
@@ -85,27 +40,31 @@ export default function MembersPage() {
             </svg>
             <input
               type="text"
-              placeholder="Search Members..."
+              placeholder="Search..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 rounded-sm bg-[#b91f24] text-white text-sm placeholder:text-white/80 focus:outline-none"
+              className="w-full pl-9 pr-4 py-2.5 rounded-md bg-white text-gray-800 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b91f24]"
             />
           </div>
-          <div className="relative">
-            <select
-              value={activeCategory}
-              onChange={(e) => setActiveCategory(e.target.value)}
-              className="appearance-none pl-3 pr-6 py-2 bg-[#b91f24] text-white text-sm font-semibold focus:outline-none cursor-pointer"
-            >
-              {CATEGORIES.map((c) => (
-                <option key={c} value={c}>{c}</option>
-              ))}
-            </select>
-            <svg className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 text-white"
-              fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </div>
+        </div>
+      </section>
+
+      <div className="w-full bg-[#b91f24] px-8 py-3">
+        <div className="relative w-full max-w-5xl mx-auto">
+          <svg
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-white w-4 h-4"
+            fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search Members..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full pl-9 pr-4 py-2 rounded-sm bg-[#b91f24] text-white text-sm placeholder:text-white/80 focus:outline-none"
+          />
         </div>
       </div>
 
