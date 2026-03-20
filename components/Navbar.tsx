@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Image from "next/image";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta-sans",
 })
+
 
 export default function Navbar({ locale }: { locale: string }) {
   return (
@@ -16,6 +18,8 @@ export default function Navbar({ locale }: { locale: string }) {
       <Link href={`/${locale}/apply`}>Apply</Link>
       <Link href={`/${locale}/contact`}>Contact Us</Link>
       <Link className="bg-[#AA302C] text-white rounded-tr-lg rounded-md p-1 whitespace-nowrap" href="#">Donate Now</Link>
+      <LanguageSwitcher/>
     </nav>
   );
 }
+
