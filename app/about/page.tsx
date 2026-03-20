@@ -95,6 +95,95 @@ export default function AboutPage() {
         </Link>
       </div>
 
-    </main>
+      {/* Partners section */}
+      <div className = "bg-[#D08A8C] py-14 px-6">
+          <h2 className = "mx-auto max-w-6xl text-white font-bold text-center mb-8 text-[3.16rem] leading-[3.51rem] tracking-[0.03px] font-[family-name:var(--font-heading)]">
+            Our Partners
+          </h2>
+          <p className="text-white text-center text-[1.23rem] leading-[1.85rem] max-w-xl mx-auto mb-10 font-[family-name:var(--font-body)]">
+            Youth Japan  is committed to solidifying partnerships to give delegates the means to 
+            achieve their ambitions and uplift youth voices.
+          </p>
+
+          <div className="grid grid-cols-3 gap-4 mb-14">
+          {["Partner 1", "Partner 2", "Partner 3"].map((name) => (
+            <div
+              key={name}
+              className="bg-white border border-[#dee2e6] flex items-center justify-center h-[60px] text-[#4a5565] text-[1.23rem] font-[family-name:var(--font-body)]"
+            >
+              {name}
+            </div>
+            ))}
+             </div>
+
+            <h3 className="text-white font-bold text-[1.75rem] leading-[2rem] mb-8 font-[family-name:var(--font-heading)] underline">
+              Working with Youth Japan
+            </h3>
+
+        <div className="flex flex-col gap-8 mb-14">
+          {/* Row 1:*/}
+          <div className="flex gap-6">
+            <div className="shrink-0 w-[428px] h-[263px] bg-[#d9d9d9]" />
+            <div>
+              <h4 className="text-white font-bold text-[1.5626rem] leading-[1.6rem] mb-2 font-[family-name:var(--font-body)] underline">
+                Access to networking opportunities with young leaders and current decision-makers
+              </h4>
+              <p className="text-white text-[1.1875rem] leading-[1.6rem] font-[family-name:var(--font-body)]">
+                Many of the youth who engage with YDC are leaders in their communities in virtually all
+                spaces. Investing in YDC is investing in youth who have an impact. Many of the youth who
+                engage with YDC are leaders in their communities in virtually all spaces. Investing in
+                YDC is investing in youth who have an impact.
+              </p>
+            </div>
+          </div>
+          </div>
+
+        {/* Row 2*/}
+        <div className="flex gap-6 mb-14">
+      <div>
+        <h4 className="text-white font-bold text-[1.5625rem] leading-[1.6rem] mb-2 font-[family-name:var(--font-body)] underline">
+          Opportunity to share your vision of how you're changing the world and bringing solutions
+          to policy challenges
+        </h4>
+        <p className="text-white text-[1.1875rem] leading-[1.6rem] font-[family-name:var(--font-body)]">
+          YDC delegations reach youth in Canada and around the world. This provides your
+          organization an opportunity to showcase your work and the positive impact you have in
+          solving society's challenges.
+        </p>
+      </div>
+      <div className="shrink-0 w-[428px] h-[263px] bg-[#d9d9d9]" />
+    </div>
+      {/* Row 3 */}
+          <div className="flex gap-6">
+          <div className="shrink-0 w-[428px] h-[263px] bg-[#d9d9d9]" />
+          <div>
+            <h4 className="text-white font-bold text-[1.5625em] leading-[1.6rem] mb-2 font-[family-name:var(--font-body)] underline">
+              Supporting today's business leaders, community leaders, and future decision-makers
+            </h4>
+            <p className="text-white text-[1.1875rem] leading-[1.6rem] font-[family-name:var(--font-body)]">
+              With a reach of 22,000 people on social media, YDC attracts a lot of attention not just
+              from youth but elected officials and other leaders.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Partner with Us Section */}
+      <div className="bg-white py-10">
+        <div className="bg-[#2F5592] rounded-[20px] py-10 px-10 text-center max-w-lg mx-auto">
+        <h3 className="text-white font-bold text-[3.16rem] leading-[3.51rem] mb-4 font-[family-name:var(--font-heading)]">
+          Partner with us
+        </h3>
+        <p className="text-white text-[1.1rem] leading-[1.7rem] mb-4 font-[family-name:var(--font-body)]">
+          Are you interested in partnering or collaborating with YDC? Send us an email to learn more
+          about our partnerships.
+        </p>
+        
+        <a href="mailto:partnerships.partenariats@youngdiplomats.ca"
+          className="text-white text-[1rem] underline font-[family-name:var(--font-body)]">
+          partnerships.partenariats@youngdiplomats.ca </a>
+          </div>
+      </div>
+   </main>
   );
 }
