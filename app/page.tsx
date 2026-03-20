@@ -1,9 +1,28 @@
 import WhatWeDo from "@/components/WhatWeDo";
+import PageHero from "@/components/PageHero";
 import News from "@/components/News";
 
 export default function HomePage() {
   return (
     <main className="bg-[#f5f2f0] text-slate-900">
+      <PageHero
+        title={
+          <>
+            Solving Global Issues
+            <span className="block">with Youth&apos;s Perspectives</span>
+          </>
+        }
+        subtitle={"Empowering Japan's next generation of global leaders."}
+        imageSrc="/homepage.jpg"
+        minHeightClassName="min-h-[70vh]"
+      >
+        <a
+          href="/apply"
+          className="inline-flex rounded-md bg-[#d0242a] px-10 py-3 text-sm font-semibold shadow-lg transition hover:bg-[#b91f24] hover:shadow-xl"
+        >
+          Apply
+        </a>
+      </PageHero>
       {/* Hero */}
       <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden">
         <div
