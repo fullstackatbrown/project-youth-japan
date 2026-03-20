@@ -130,9 +130,7 @@ export default function AboutPage() {
               </h4>
               <p className="text-white text-[1.1875rem] leading-[1.6rem] font-[family-name:var(--font-body)]">
                 Many of the youth who engage with YDC are leaders in their communities in virtually all
-                spaces. Investing in YDC is investing in youth who have an impact. Many of the youth who
-                engage with YDC are leaders in their communities in virtually all spaces. Investing in
-                YDC is investing in youth who have an impact.
+                spaces. Investing in YDC is investing in youth who have an impact.
               </p>
             </div>
           </div>
