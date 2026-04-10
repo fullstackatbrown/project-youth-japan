@@ -1,5 +1,17 @@
 import Link from "next/link";
+import { League_Spartan, Plus_Jakarta_Sans } from "next/font/google";
 
+const leagueSpartan = League_Spartan({
+  subsets: ["latin"],
+  variable: "--font-league-spartan",
+})
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-plus-jakarta-sans",
+})
+
+const linkStyle = "text-white hover:text-blue-400 transition-colors flex items-center justify-center w-12 h-12 rounded-full bg-[#b91f24]";
 const heroImage = "/images/hero.png";
 const sectionImage = "/images/section-bg.png";
 
@@ -93,6 +105,110 @@ export default function AboutPage() {
         >
           News
         </Link>
+      </div>
+
+      {/* Leadership */}
+      <div className="bg-[#B91F24] text-white text-center py-6">
+        <h2 className={`${leagueSpartan.className} text-6xl font-bold`}>Leadership</h2>
+      </div>
+
+      <div className="w-full px-8 py-12 flex flex-col items-center gap-12">
+        {/* Description text */}
+        <p className="text-2xl text-gray-800 text-center max-w-3xl">
+          Lorem ipsum dolor sit amet consectetur. Ut duis enim donec odio leo nam hendrerit ullamcorper elementum. Laoreet interdum mattis varius varius condimentum elit adipiscing sed non. Libero ipsum vitae
+        </p>
+
+        {/* Images row with captions */}
+        <div className="flex flex-row justify-center items-start gap-10">
+          <div className="flex flex-col items-center gap-3">
+            <img className="w-80 h-80 bg-gray-300 rounded-full border border-gray-400 object-cover" src="#" />
+            <p className="mt-3 text-[#b91f24] font-semibold text-[0.95rem] leading-snug font-[family-name:var(--font-body)]">
+              NAME
+            </p>
+            <p className="mt-0.5 text-gray-600 font-medium text-[0.72rem] uppercase tracking-wide font-[family-name:var(--font-body)]">
+              TITLE
+            </p>
+            <p className="mt-0.5 text-[#b91f24] text-[0.78rem] font-[family-name:var(--font-body)]">
+              Location
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <img className="w-80 h-80 bg-gray-300 rounded-full border border-gray-400 object-cover" src="#" />
+            <p className="mt-3 text-[#b91f24] font-semibold text-[0.95rem] leading-snug font-[family-name:var(--font-body)]">
+              NAME
+            </p>
+            <p className="mt-0.5 text-gray-600 font-medium text-[0.72rem] uppercase tracking-wide font-[family-name:var(--font-body)]">
+              TITLE
+            </p>
+            <p className="mt-0.5 text-[#b91f24] text-[0.78rem] font-[family-name:var(--font-body)]">
+              Location
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <img className="w-80 h-80 bg-gray-300 rounded-full border border-gray-400 object-cover" src="#" />
+            <p className="mt-3 text-[#b91f24] font-semibold text-[0.95rem] leading-snug font-[family-name:var(--font-body)]">
+              NAME
+            </p>
+            <p className="mt-0.5 text-gray-600 font-medium text-[0.72rem] uppercase tracking-wide font-[family-name:var(--font-body)]">
+              TITLE
+            </p>
+            <p className="mt-0.5 text-[#b91f24] text-[0.78rem] font-[family-name:var(--font-body)]">
+              Location
+            </p>
+          </div>
+        </div>
+      </div>
+
+       {/* Administration */}
+      <div className="bg-[#B91F24] text-white text-center py-6">
+        <h2 className={`${leagueSpartan.className} text-6xl font-bold`}>Administration</h2>
+      </div>
+
+      <div className="w-full px-8 py-12 flex flex-col items-center gap-12">
+        {/* Description text */}
+        <p className="text-2xl text-gray-800 text-center max-w-3xl">
+          Lorem ipsum dolor sit amet consectetur. Ut duis enim donec odio leo nam hendrerit ullamcorper elementum. Laoreet interdum mattis varius varius condimentum elit adipiscing sed non. Libero ipsum vitae
+        </p>
+
+        {/* Images row with captions */}
+        <div className="flex flex-row justify-center items-start gap-10">
+          <div className="flex flex-col items-center gap-3">
+            <img className="w-80 h-80 bg-gray-300 rounded-full border border-gray-400 object-cover" src="#" />
+            <p className="mt-3 text-[#b91f24] font-semibold text-[0.95rem] leading-snug font-[family-name:var(--font-body)]">
+              NAME
+            </p>
+            <p className="mt-0.5 text-gray-600 font-medium text-[0.72rem] uppercase tracking-wide font-[family-name:var(--font-body)]">
+              TITLE
+            </p>
+            <p className="mt-0.5 text-[#b91f24] text-[0.78rem] font-[family-name:var(--font-body)]">
+              Location
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <img className="w-80 h-80 bg-gray-300 rounded-full border border-gray-400 object-cover" src="#" />
+            <p className="mt-3 text-[#b91f24] font-semibold text-[0.95rem] leading-snug font-[family-name:var(--font-body)]">
+              NAME
+            </p>
+            <p className="mt-0.5 text-gray-600 font-medium text-[0.72rem] uppercase tracking-wide font-[family-name:var(--font-body)]">
+              TITLE
+            </p>
+            <p className="mt-0.5 text-[#b91f24] text-[0.78rem] font-[family-name:var(--font-body)]">
+              Location
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <img className="w-80 h-80 bg-gray-300 rounded-full border border-gray-400 object-cover" src="#" />
+            <p className="mt-3 text-[#b91f24] font-semibold text-[0.95rem] leading-snug font-[family-name:var(--font-body)]">
+              NAME
+            </p>
+            <p className="mt-0.5 text-gray-600 font-medium text-[0.72rem] uppercase tracking-wide font-[family-name:var(--font-body)]">
+              TITLE
+            </p>
+            <p className="mt-0.5 text-[#b91f24] text-[0.78rem] font-[family-name:var(--font-body)]">
+              Location
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Partners section */}
