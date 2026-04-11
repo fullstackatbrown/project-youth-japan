@@ -87,6 +87,7 @@ export default function LibraryPage() {
         subtitle="Archive of Past Summits & Documents"
         imageSrc="/homepage.jpg"
         minHeightClassName="min-h-[45vh]"
+        titleClassName="text-5xl font-semibold leading-tight sm:text-6xl md:text-7xl lg:text-8xl break-words"
       />
 
       <div className="pb-20">

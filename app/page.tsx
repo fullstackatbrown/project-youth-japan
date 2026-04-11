@@ -51,7 +51,7 @@ export default function HomePage() {
       <WhatWeDo />
       <img
         src="/images/flow-chart.png"
-        className="max-w-150 mx-auto pt-10 pb-20"
+        className="w-full max-w-2xl mx-auto pt-10 pb-20 px-4"
       ></img>
       <News />
     </main>
