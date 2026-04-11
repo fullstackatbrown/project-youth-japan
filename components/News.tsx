@@ -3,10 +3,10 @@ import React from "react";
 const News = () => {
   return (
     <div>
-      <h1 className="text-3xl font-semibold text-white md:text-4xl lg:text-5xl bg-[#B91F24] py-5 text-center rounded-[40px] max-w-292  mx-auto">
+      <h1 className="text-3xl font-semibold text-white md:text-4xl lg:text-5xl bg-[#B91F24] py-5 text-center rounded-[40px] max-w-2xl mx-auto">
         News
       </h1>
-      <div className="grid grid-cols-3 gap-12 pt-10 px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-10 px-6 md:px-10">
         <div className="mb-2">
           <div className="bg-[#D9D9D9] h-75 mb-2"></div>
           <p className="text-lg">30 february 2028</p>
