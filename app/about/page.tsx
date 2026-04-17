@@ -26,15 +26,15 @@ export default function AboutPage() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[rgba(70,49,52,0.52)]" />
-        <h1 className="relative z-10 text-white font-bold text-center px-6 text-[4.83rem] leading-[1.09] tracking-[0.09px] font-[family-name:var(--font-heading)]">
+        <h1 className="relative z-10 text-white font-bold text-center px-6 text-3xl md:text-[4.83rem] leading-[1.09] tracking-[0.09px] font-[family-name:var(--font-heading)]">
           G7/G20 Youth Japan: Our Story
         </h1>
       </section>
 
       {/* How We Started */}
       <section className="bg-[#fff6f6] py-16 px-6">
-        <div className="mx-auto max-w-6xl flex gap-12 items-start">
-          <div className="shrink-0 w-[412px] h-[510px] bg-[#d9d9d9]" />
+        <div className="mx-auto max-w-6xl flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+          <div className="shrink-0 w-full md:w-[412px] h-[220px] md:h-[510px] bg-[#d9d9d9]" />
           <div className="flex-1 pt-4">
             <h2 className="text-[3.16rem] font-bold text-center mb-4 text-black leading-[3.51rem] tracking-[0.03px] font-[family-name:var(--font-heading)]">
               It all begins with an idea
@@ -55,7 +55,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Mission & Our Vision — each 550×700px in Figma */}
-      <section className="mx-auto max-w-6xl px-6 py-12 grid grid-cols-2 gap-8">
+      <section className="mx-auto max-w-6xl px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Our Mission */}
         <div className="relative overflow-hidden min-h-[700px]">
           <img src={sectionImage} alt="" className="absolute inset-0 w-full h-full object-cover opacity-70" />
@@ -98,10 +98,10 @@ export default function AboutPage() {
       </section>
 
       {/* News button — h-[102px], rounded-[40px] */}
-      <div className="mx-auto max-w-6xl px-6 pb-12">
+      <div className="px-6 pb-12">
         <Link
           href="/events"
-          className="flex items-center justify-center w-full h-[102px] bg-[#b91f24] text-white font-bold text-center rounded-[40px] hover:bg-[#9e1a1f] transition-colors text-[3.16rem] leading-[1.76rem] tracking-[-0.013px] font-[family-name:var(--font-heading)]"
+          className="flex items-center justify-center w-full h-[70px] md:h-[102px] bg-[#b91f24] text-white font-bold text-center rounded-[40px] hover:bg-[#9e1a1f] transition-colors text-2xl md:text-[3.16rem] leading-[1.76rem] tracking-[-0.013px] font-[family-name:var(--font-heading)]"
         >
           News
         </Link>
@@ -221,7 +221,7 @@ export default function AboutPage() {
             achieve their ambitions and uplift youth voices.
           </p>
 
-          <div className="grid grid-cols-3 gap-4 mb-14">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
           {["Partner 1", "Partner 2", "Partner 3"].map((name) => (
             <div
               key={name}
@@ -238,8 +238,8 @@ export default function AboutPage() {
 
         <div className="flex flex-col gap-8 mb-14">
           {/* Row 1:*/}
-          <div className="flex gap-6">
-            <div className="shrink-0 w-[428px] h-[263px] bg-[#d9d9d9]" />
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="shrink-0 w-full md:w-[428px] h-[200px] md:h-[263px] bg-[#d9d9d9]" />
             <div>
               <h4 className="text-white font-bold text-[1.5626rem] leading-[1.6rem] mb-2 font-[family-name:var(--font-body)] underline">
                 Access to networking opportunities with young leaders and current decision-makers
@@ -253,7 +253,7 @@ export default function AboutPage() {
           </div>
 
         {/* Row 2*/}
-        <div className="flex gap-6 mb-14">
+        <div className="flex flex-col md:flex-row gap-6 mb-14">
       <div>
         <h4 className="text-white font-bold text-[1.5625rem] leading-[1.6rem] mb-2 font-[family-name:var(--font-body)] underline">
           Opportunity to share your vision of how you're changing the world and bringing solutions
@@ -265,11 +265,11 @@ export default function AboutPage() {
           solving society's challenges.
         </p>
       </div>
-      <div className="shrink-0 w-[428px] h-[263px] bg-[#d9d9d9]" />
+      <div className="shrink-0 w-full md:w-[428px] h-[200px] md:h-[263px] bg-[#d9d9d9]" />
     </div>
       {/* Row 3 */}
-          <div className="flex gap-6">
-          <div className="shrink-0 w-[428px] h-[263px] bg-[#d9d9d9]" />
+          <div className="flex flex-col md:flex-row gap-6">
+          <div className="shrink-0 w-full md:w-[428px] h-[200px] md:h-[263px] bg-[#d9d9d9]" />
           <div>
             <h4 className="text-white font-bold text-[1.5625em] leading-[1.6rem] mb-2 font-[family-name:var(--font-body)] underline">
               Supporting today's business leaders, community leaders, and future decision-makers

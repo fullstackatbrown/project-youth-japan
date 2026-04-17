@@ -30,13 +30,16 @@ export default function ApplyPage() {
   };
 
   return (
-    <main className="w-screen">
+    <main className="w-full">
       {/* Background image */}
-      <div className="relative w-full">
-        <img src="/images/apply-bg.png" className="w-full h-auto" alt="Apply background"/>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6 py-16 bg-black/40 space-y-8">
+      <div
+        className="relative w-full"
+        style={{ backgroundImage: 'url("/images/apply-bg.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-6 py-16 space-y-8 min-h-[90vh]">
           <div className="space-y-6">
-            <p className={`${leagueSpartan.className} text-7xl font-bold`}>Get Involved</p>
+            <p className={`${leagueSpartan.className} text-4xl md:text-7xl font-bold`}>Get Involved</p>
             <div>
               <p className={`${plusJakartaSans.className} text-xl font-bold max-w-3xl`}>Interested in becoming a delegate or joining our executive team?</p>
               <p className={`${plusJakartaSans.className} text-xl font-bold max-w-3xl`}>You're in the right place!</p>
@@ -44,7 +47,7 @@ export default function ApplyPage() {
             <p className={`${plusJakartaSans.className} text-lg max-w-3xl`}>On this page you'll find details on the recruitment process and important deadlines.</p>
           </div>
 
-          <div className="flex gap-32 mt-6">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-32 mt-6">
             <Link href="#" className="bg-[#B91F24] hover:bg-[#a31b1f] px-8 py-4 rounded-md text-lg font-semibold transition">Become a Delegate</Link>
             <Link href="#" className="bg-[#B91F24] hover:bg-[#a31b1f] px-8 py-4 rounded-md text-lg font-semibold transition">Join the Executive Team</Link>
           </div>
@@ -54,7 +57,7 @@ export default function ApplyPage() {
       {/* Become a delegate */}
       <section className="w-full bg-[#e9e4e2]">
         <div className="bg-[#c63734] text-white text-center py-6">
-          <h2 className={`${leagueSpartan.className} text-6xl font-bold`}>Become a Delegate</h2>
+          <h2 className={`${leagueSpartan.className} text-3xl md:text-6xl font-bold`}>Become a Delegate</h2>
         </div>
 
         <div className="max-w-6xl mx-auto px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -107,7 +110,7 @@ export default function ApplyPage() {
 
         {/* Timeline */}
         <div className="w-[90%] max-w-6xl text-white p-6">
-          <h2 className="text-6xl font-semibold text-left mb-6">Our Recruitment Process for Delegates:</h2>
+          <h2 className="text-2xl md:text-6xl font-semibold text-left mb-6">Our Recruitment Process for Delegates:</h2>
           <img src="/images/recruitment-timeline.png" className="w-full h-auto" alt="Apply background"/>
         </div>
 
@@ -142,12 +145,12 @@ export default function ApplyPage() {
       <section className="w-full bg-gray-200 pb-16">
         {/* Header */}
         <div className="w-full bg-[#3b5f95] py-6 text-center">
-          <h2 className="text-6xl font-semibold text-white">Join the Executive Team</h2>
+          <h2 className="text-3xl md:text-6xl font-semibold text-white">Join the Executive Team</h2>
         </div>
 
         <div className="max-w-6xl mx-auto px-6 pt-10">
           {/* Image placeholders */}
-          <div className="flex flex-row items-center justify-center gap-30">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-30">
             <img className="w-48 h-48 bg-gray-300 border border-gray-400" src="#"/>
             <img className="w-48 h-48 bg-gray-300 border border-gray-400" src="#"/>
             <img className="w-48 h-48 bg-gray-300 border border-gray-400" src="#"/>
