@@ -32,9 +32,12 @@ export default function ApplyPage() {
   return (
     <main className="w-full">
       {/* Background image */}
-      <div className="relative w-full min-h-[60vh] overflow-hidden">
-        <img src="/images/apply-bg.png" className="absolute inset-0 w-full h-full object-cover" alt="Apply background"/>
-        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-6 py-20 min-h-[60vh] bg-black/40 space-y-8">
+      <div
+        className="relative w-full"
+        style={{ backgroundImage: 'url("/images/apply-bg.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-6 py-16 space-y-8 min-h-[90vh]">
           <div className="space-y-6">
             <p className={`${leagueSpartan.className} text-4xl md:text-7xl font-bold`}>Get Involved</p>
             <div>
@@ -147,7 +150,7 @@ export default function ApplyPage() {
 
         <div className="max-w-6xl mx-auto px-6 pt-10">
           {/* Image placeholders */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-30">
             <img className="w-48 h-48 bg-gray-300 border border-gray-400" src="#"/>
             <img className="w-48 h-48 bg-gray-300 border border-gray-400" src="#"/>
             <img className="w-48 h-48 bg-gray-300 border border-gray-400" src="#"/>

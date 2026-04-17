@@ -88,9 +88,9 @@ export default function MembersPage() {
               placeholder="Search..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-28 py-3 rounded-full bg-white text-gray-800 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b91f24]"
+              className="w-full pl-10 pr-28 md:pr-4 py-3 rounded-full bg-white text-gray-800 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b91f24]"
             />
-            <button className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-[#b91f24] text-white text-sm font-medium">
+            <button className="absolute right-0 md:right-[-3rem] top-1/2 -translate-y-1/2 flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-[#b91f24] text-white text-sm font-medium">
               All
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path d="m6 9 6 6 6-6" />

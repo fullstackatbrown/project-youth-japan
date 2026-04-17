@@ -24,11 +24,11 @@ export default function WhatWeDo() {
         <h1 className="text-white text-3xl md:text-5xl font-semibold tracking-[3px] mb-8">
           What We Do
         </h1>
-        <div className="flex flex-col md:flex-row justify-center w-full max-w-5xl gap-4 pb-4">
+        <div className="flex flex-col md:flex-row justify-center w-full gap-4 md:gap-0 pb-4">
           {cards.map(card => (
             <div
               key={card.title}
-              className="bg-white text-center w-full md:w-1/3 border-2 border-[#DEE2E6] p-6"
+              className="bg-white text-center w-full md:w-1/4 md:h-90 md:m-7 md:mt-6 border-2 border-[#DEE2E6] p-6"
             >
               <h2 className="text-[#003366] text-xl mb-4 font-semibold">{card.title}</h2>
               <p className="text-sm text-black opacity-70 font-[400]">{card.text}</p>

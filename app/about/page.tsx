@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* News button — h-[102px], rounded-[40px] */}
-      <div className="mx-auto max-w-6xl px-6 pb-12">
+      <div className="px-6 pb-12">
         <Link
           href="/events"
           className="flex items-center justify-center w-full h-[70px] md:h-[102px] bg-[#b91f24] text-white font-bold text-center rounded-[40px] hover:bg-[#9e1a1f] transition-colors text-2xl md:text-[3.16rem] leading-[1.76rem] tracking-[-0.013px] font-[family-name:var(--font-heading)]"
