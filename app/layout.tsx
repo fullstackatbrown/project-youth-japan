@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FollowOurJourney from "../components/FollowOurJourney";
 
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+
 const headingFont = League_Spartan({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -40,3 +43,34 @@ export default function RootLayout({
     </html>
   );
 }
+
+// export default async function RootLayout({
+//   children,
+//   params,
+// }: {
+//   children: React.ReactNode;
+//     params: Promise<{ locale: string }>;
+// }) {
+
+//   const { locale } = await params;
+
+//   let messages;
+
+//   try {
+//     messages = (await import(`../../messages/${locale}.json`)).default;
+//   } catch {
+//     notFound();
+//   }
+
+//   return (
+//     <html lang={locale}>
+//       <body>
+//         <NextIntlClientProvider locale={locale} messages={messages}>
+//           <Navbar locale={locale} />
+//           {children}
+//           <Footer locale={locale} />
+//         </NextIntlClientProvider>
+//       </body>
+//     </html>
+//   );
+// }
