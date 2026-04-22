@@ -11,12 +11,12 @@ export default function ContactPage() {
       <section className="bg-[#b91f24] relative">
         <div className="bg-[rgba(70,49,52,0.52)] px-6 py-20 text-center">
           <h1 className="text-[4.83rem] font-bold text-white leading-[1.09] tracking-[0.09px] font-[family-name:var(--font-heading)]">
-            {t('Contact.title')}
+            {t('title')}
           </h1>
           {/* Divider */}
           <div className="mx-auto mt-4 mb-10 h-px w-[463px] bg-white/40" />
           <p className="text-[2.1rem] font-medium leading-[1.2] tracking-[0.006px] text-[#fd898c] font-[family-name:var(--font-body)]">
-            {t('Contact.description')}
+            {t('description')}
           </p>
           <p className="mt-6 text-[2.1rem] font-medium leading-[1.2] tracking-[0.006px] text-[#fd898c] font-[family-name:var(--font-body)]">
             Send us an email:
