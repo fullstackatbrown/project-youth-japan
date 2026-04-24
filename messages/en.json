@@ -1,7 +1,16 @@
 {
   "Home": {
-    "title": "Welcome to G7/G20 Youth Japan",
-    "description": "Empowering young leaders around the world"
+    "title": {
+      "line1": "Solving Global Issues",
+      "line2": "with Youth's Perspectives"
+    },
+    "subtitle": "Empowering Japan's next generation of global leaders.",
+    "apply": "Apply",
+    "about": {
+      "title": "About Us",
+      "description": "At Young Diplomats of Japan, we understand that diplomacy extends beyond traditional boundaries. Our work focuses on understanding the views of the younger generation and delivering their insights to the places where policy and strategy are shaped. We aim to ensure that youth voices are heard, informed, and impactful in shaping the world ahead.",
+      "learnMore": "Learn More"
+    }
   },
   
   "Delegations": {
