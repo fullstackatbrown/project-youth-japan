@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#740a0d] px-8 py-14 text-[#d1d5dc]">
       <div className="mx-auto max-w-6xl">
-        <div className="flex gap-16 mb-12">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 mb-12">
           <div className="shrink-0 w-48">
             <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">

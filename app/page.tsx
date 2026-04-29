@@ -49,10 +49,9 @@ export default function HomePage() {
         </div>
       </section>
       <WhatWeDo />
-      <img
-        src="/images/flow-chart.png"
-        className="max-w-150 mx-auto pt-10 pb-20"
-      ></img>
+      <div className="max-w-xl mx-auto pt-10 pb-20 px-4">
+        <img src="/images/flow-chart.png" className="w-full" />
+      </div>
       <News />
     </main>
   );
