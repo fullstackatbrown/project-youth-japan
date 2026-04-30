@@ -31,5 +31,24 @@
     "library": "図書館",
     "contact": "お問い合わせ",
     "donate": "寄付する"
+  },
+
+    "About": {
+      "title": "G7/G20ユース・ジャパン：私たちの物語"
+    },
+    "Apply": {
+      "title": "参加する",
+      "subtitle": "代表団として参加、または運営チームに加わりませんか？"
+    },
+    "Members": {
+      "title": "メンバー"
+    },
+    "Events": {
+      "title": "イベント",
+      "subtitle": "未来を共につくる"
+    },
+    "Library": {
+      "title": "ライブラリ",
+      "subtitle": "過去のサミットと資料のアーカイブ"
   }
 }

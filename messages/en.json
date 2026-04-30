@@ -32,5 +32,24 @@
       "library": "Library",
       "contact": "Contact Us",
       "donate": "Donate Now"
+    },
+
+      "About": {
+        "title": "G7/G20 Youth Japan: Our Story"
+      },
+      "Apply": {
+        "title": "Get Involved",
+        "subtitle": "Interested in becoming a delegate or joining our executive team? You're in the right place!"
+      },
+      "Members": {
+        "title": "Our Members"
+      },
+      "Events": {
+        "title": "Events",
+        "subtitle": "Join us in shaping the future"
+      },
+      "Library": {
+        "title": "Library",
+        "subtitle": "Archive of Past Summits & Documents"
     }
 }
