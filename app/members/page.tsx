@@ -68,8 +68,8 @@ export default function MembersPage() {
           style={{ objectPosition: "center 30%" }}
         />
         <div className="absolute inset-0 bg-black/20" />
-        <div className="relative z-10 flex items-center justify-between w-full max-w-5xl mx-auto px-8 gap-6">
-          <h1 className="text-white font-bold text-[5rem] leading-[1.1] tracking-[0.09px] whitespace-nowrap font-[family-name:var(--font-heading)]">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-5xl mx-auto px-8 gap-4 md:gap-6">
+          <h1 className="text-white font-bold text-4xl md:text-[5rem] leading-[1.1] tracking-[0.09px] font-[family-name:var(--font-heading)]">
             Our Members
           </h1>
           <div className="relative flex-1 max-w-xl">
@@ -88,9 +88,9 @@ export default function MembersPage() {
               placeholder="Search..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 rounded-full bg-white text-gray-800 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b91f24]"
+              className="w-full pl-10 pr-28 md:pr-4 py-3 rounded-full bg-white text-gray-800 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#b91f24]"
             />
-            <button className="absolute top-1/2 -translate-y-1/2 flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-[#b91f24] text-white text-sm font-medium" style={{ right: "-3rem" }}>
+            <button className="absolute right-0 md:right-[-3rem] top-1/2 -translate-y-1/2 flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-[#b91f24] text-white text-sm font-medium">
               All
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path d="m6 9 6 6 6-6" />

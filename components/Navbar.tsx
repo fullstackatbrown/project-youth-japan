@@ -1,15 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta-sans",
 });
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/members', label: 'Members' },
+  { href: '/apply', label: 'Apply' },
+  { href: '/events', label: 'Events' },
+  { href: '/library', label: 'Library' },
+  { href: '/contact', label: 'Contact Us' },
+];
 
 export default function Navbar() {
   const pathname = usePathname();

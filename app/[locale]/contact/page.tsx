@@ -18,7 +18,7 @@ export default function ContactPage() {
           <p className="text-[2.1rem] font-medium leading-[1.2] tracking-[0.006px] text-[#fd898c] font-[family-name:var(--font-body)]">
             {t('description')}
           </p>
-          <p className="mt-6 text-[2.1rem] font-medium leading-[1.2] tracking-[0.006px] text-[#fd898c] font-[family-name:var(--font-body)]">
+          <p className="mt-6 text-lg md:text-[2.1rem] font-medium leading-[1.2] tracking-[0.006px] text-[#fd898c] font-[family-name:var(--font-body)]">
             Send us an email:
             <br />
             info@youngdiplomats.ca
@@ -33,7 +33,7 @@ export default function ContactPage() {
             <p className="text-[1.58rem] font-normal text-white mb-2 font-[family-name:var(--font-body)]">
               Name
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <label className="block text-[1.4rem] text-white mb-1 font-[family-name:var(--font-inter)]">
                   First Name <span className="text-white/70">(required)</span>
