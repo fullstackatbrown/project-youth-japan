@@ -1,0 +1,23 @@
+{
+  "Home": {
+    "title": {
+      "line1": "[ja] Solving Global Issues",
+      "line2": "[ja] with Youth's Perspectives"
+    },
+    "subtitle": "[ja] Empowering Japan's next generation of global leaders.",
+    "apply": "[ja] Apply",
+    "about": {
+      "title": "[ja] About Us",
+      "description": "[ja] At Young Diplomats of Japan, we understand that diplomacy extends beyond traditional boundaries. Our work focuses on understanding the views of the younger generation and delivering their insights to the places where policy and strategy are shaped. We aim to ensure that youth voices are heard, informed, and impactful in shaping the world ahead.",
+      "learnMore": "[ja] Learn More"
+    }
+  },
+  "Delegations": {
+    "title": "[ja] Delegations",
+    "description": " [ja] Placeholder — content + design coming soon."
+  }, 
+
+    "Contact": {
+    "title": "[ja] Contact Us"
+    }
+}

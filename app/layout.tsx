@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FollowOurJourney from "../components/FollowOurJourney";
 
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+
 const headingFont = League_Spartan({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -32,10 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${headingFont.variable} ${bodyFont.variable} ${inter.variable}`}>
-        <Navbar />
         {children}
-         <FollowOurJourney />
-        <Footer />
       </body>
     </html>
   );
