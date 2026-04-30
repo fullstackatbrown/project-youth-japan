@@ -21,5 +21,16 @@
     "Contact": {
     "title": "Contact Us",
     "description": "Have questions about YDC? Our Delegations? Partnership opportunities?"
+    },
+
+    "Navbar": {
+      "home": "Home",
+      "about": "About",
+      "members": "Members",
+      "apply": "Apply",
+      "events": "Events",
+      "library": "Library",
+      "contact": "Contact Us",
+      "donate": "Donate Now"
     }
 }

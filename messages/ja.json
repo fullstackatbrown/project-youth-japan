@@ -1,23 +1,35 @@
 {
   "Home": {
     "title": {
-      "line1": "[ja] Solving Global Issues",
-      "line2": "[ja] with Youth's Perspectives"
+      "line1": "地球規模の課題の解決",
+      "line2": "若者たちの視点とともに"
     },
-    "subtitle": "[ja] Empowering Japan's next generation of global leaders.",
-    "apply": "[ja] Apply",
+    "subtitle": "日本の次世代グローバルリーダーを育成する.",
+    "apply": "申し込む",
     "about": {
-      "title": "[ja] About Us",
-      "description": "[ja] At Young Diplomats of Japan, we understand that diplomacy extends beyond traditional boundaries. Our work focuses on understanding the views of the younger generation and delivering their insights to the places where policy and strategy are shaped. We aim to ensure that youth voices are heard, informed, and impactful in shaping the world ahead.",
-      "learnMore": "[ja] Learn More"
+      "title": "会社概要",
+      "description": "「ヤング・ディプロマッツ・オブ・ジャパン」では、外交は従来の枠組みを超えたものであると認識しています。私たちの活動は、若者の視点を理解し、その洞察を政策や戦略が策定される場へと届けることに重点を置いています。私たちは、若者の声が確実に届き、十分な情報に基づいたものとなり、これからの世界を形作る上で影響力を持つことを目指しています.",
+      "learnMore": "詳細はこちら"
     }
   },
   "Delegations": {
-    "title": "[ja] Delegations",
-    "description": " [ja] Placeholder — content + design coming soon."
+    "title": "代表団",
+    "description": "プレースホルダー — コンテンツとデザインは近日公開予定です."
   }, 
 
     "Contact": {
-    "title": "[ja] Contact Us"
-    }
+    "title": "お問い合わせ",
+    "description": "YDCについて、あるいは当団体の代表団やパートナーシップの機会についてご質問はありますか?"
+    },
+
+  "Navbar": {
+    "home": "ホーム",
+    "about": "概要",
+    "members": "メンバー",
+    "apply": "申し込む",
+    "events": "イベント",
+    "library": "図書館",
+    "contact": "お問い合わせ",
+    "donate": "寄付する"
+  }
 }
